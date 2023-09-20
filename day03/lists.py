@@ -73,4 +73,122 @@ print('---------')
 
 for x in reversed(nums):
     print(x)
+print('-------------------------')
+
+i=0
+
+while i<len(nums):
+    print(nums[i])
+    i+=1
+
+
+print('-------------------------------')
+
+for i in range (1,6):
+    i+=2
+    print(1)
+    print(i)
+print('----------------')
+
+nums=[60,500,10,20,15,5,0]
+
+#nums.sort() #ascending order
+
+nums.sort(reverse=True)
+print(nums)
+
+
+print('--------------------')
+
+list1=[10,20,30,40]
+
+list1=list(reversed(list1))
+
+print(list1)
+
+print('-------------------')
+
+tuple_elements = ('Java','Python','C#','Ruby')
+
+
+list_elements=list(tuple_elements)
+
+print(list_elements)
+
+list1=[1,2,3,4,5]
+list2=[1,2,3,4,5]
+
+print(list1 is list2)
+
+tuple1=(1,2,3,4,5)
+tuple2=(1,2,3,4,5)
+
+print(tuple1 is tuple2)
+
+groceries_list=['Eggs','Milk','Rice']
+
+print(groceries_list)
+groceries_list.append('Chivken')
+
+groceries_list.remove('Milk')
+print(groceries_list)
+
+groceries_list.pop()
+print(groceries_list)
+
+groceries_list.pop()
+print(groceries_list)
+
+
+groceries_list.insert(2,'Apple')
+print(groceries_list)
+
+nums=[1,2,3,4,5,1,1,1,1,5,6,1]
+
+print(nums.count(1))
+
+
+print('-----------Comprehensions------------------------------')
+
+nums=[]
+
+for x in range(1,51):
+    nums.append(x)
+
+print(nums)
+
+print('-------------------------')
+"""
+divisible_by_5=[]
+
+for x in nums:
+    if x % 5 == 0:
+        divisible_by_5.append(x)
+
+print(divisible_by_5)
+
+"""
+
+divisible_by_5 =[x for x in nums]
+print(divisible_by_5)
+
+divisible_by_5=[x for x in nums if x%5 ==0]
+
+print(divisible_by_5)
+
+divisible_by_5=tuple( [x for x in nums if x%5 ==0])
+print(divisible_by_5) #tuple
+
+even_nums=[x for x in nums if x %2==0]
+odd_nums=[x for x in nums if x %2 !=0]
+
+print(even_nums)
+print(odd_nums)
+
+names =['Python','Java','Java','JavaScript','java','jaVA','Ruby']
+
+names=[x for x in names if x.lower() != 'java']
+
+print(names)
+
 
