@@ -35,3 +35,10 @@ print(n)
 
 print('----------------------')
 
+s1={'Java','Python','C#'}
+s2={'Rubby','Java','C++','Swift'}
+
+
+s3=s1.difference(s2)
+
+print(s3)
